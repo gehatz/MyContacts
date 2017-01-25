@@ -1,0 +1,41 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron" style="background-image:url(/Content/images/mycontacts.jpg); background-size: 100% 100%;">
+    <h1>MyContacts</h1>
+    <p class="lead">A basic CRUD operations web application to manage all your contacts easily in one place.</p>
+    <p><a class="btn btn-primary btn-lg" href="/Contacts">Manage your contacts &raquo;</a></p>
+    <!--@Html.ActionLink("Manage your contacts »", "Index", "Contacts")-->
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <img src="http://contactweb.apphb.com/images/MVC48Hours.png" style="max-width:100%" />
+        <h2>About the application</h2>
+        <p>
+            MyContacts is simple contacts management application I built while learning about the 
+            ASP.NET Framework using MVC. It allows a user to create and manage their contact lists 
+            in addition to providing efficient searching and sorting controls.
+        </p>
+        <p>@Html.ActionLink("Learn More »", "About", "Home", new { @class="btn btn-default"} )</p>
+        
+    </div>
+    <div class="col-md-4">
+        <img src="~/Content/images/george-coding.jpg" style="max-width:100%" />
+        <h2>About the developer</h2>
+        <p>I am a new web developer with many years of experience as a hoby. In the last 3 years I
+        have been pursuing a CIS degree with an emphasis on backend web development while being enrolled in
+        various other courses to get experience using alternative languages, frameworks and technologies.
+        </p>
+        <p><a class="btn btn-default" href="http://www.georgehatzigeorgiou.com">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <img src="~/Content/images/contact-me.jpg" style="max-width:100%" />
+        <h2>Get in touch!</h2>
+        <p>Interested in offering me a position within your company or hiring me to develop a quality web
+        application for your business or organization? Perhaps you simply want to say hello, that would 
+        also make me very happy :) Please follow the link bellow.</p>
+        <p>@Html.ActionLink("Contact Info »", "Contact", "Home", new { @class = "btn btn-default" })</p>
+    </div>
+</div>
